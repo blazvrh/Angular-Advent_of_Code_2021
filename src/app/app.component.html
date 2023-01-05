@@ -1,0 +1,28 @@
+<div class="bg"></div>
+
+<h1>
+  <a routerLink="/"> Advent of Code 2020 </a>
+</h1>
+<div class="link">
+  <a href="https://adventofcode.com/2020" target="_blank"
+    >Official Advent of Code site</a
+  >
+</div>
+<div class="nav">
+  Days:
+  <p *ngFor="let day of days">
+    <a routerLinkActive="active-link" routerLink="days/{{ day }}">{{ day }}</a>
+  </p>
+</div>
+
+<router-outlet></router-outlet>
+
+<hr />
+<small>
+  Coded in TypeScript -
+  <span class="link">
+    <a href="https://github.com/blazvrh/Angular-Advent_of_Code_2021">
+      Git repo
+    </a>
+  </span>
+</small>
